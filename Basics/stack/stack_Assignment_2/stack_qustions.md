@@ -1,4 +1,8 @@
-Assignment-: Stack Extending List
+# ========================================
+# Assignment-8: Stack Extending List
+# ========================================
+
+
 
 1. Define a class Stack to implement stack data structure by extending the list class.
 

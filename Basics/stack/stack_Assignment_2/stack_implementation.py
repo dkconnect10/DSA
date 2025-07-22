@@ -40,7 +40,7 @@ class Stack(list):
     def size(self):
             return len(self)
         
-    
+    #insert error()
     def insert(self,index,value):
         raise AttributeError("No attribute 'insert' in stack ")    
         

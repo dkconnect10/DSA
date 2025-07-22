@@ -1,6 +1,7 @@
+# ========================================
+# Assignment-7: Stack using List
+# ========================================
 
-Assignment 7: Stack using List
-DSA using Python
 
 Define a class Stack
 Implement a stack data structure using a list. Define the __init__() method to create an empty list object as an instance object member of the Stack class.
