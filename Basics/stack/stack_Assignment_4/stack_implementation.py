@@ -19,10 +19,53 @@
 #    i.e. number of items present in the stack.
 
 
+class Node:
+    def __init__(self,item=None,next=None):
+        self.item = item
+        self.next = next
 
 
-class Stack(linklist):
+class Stack:
+    def __init__(self):
+        self.start = None
+        self.item_count = 0
+        
     def is_empty(self):
-        return len(self)==None
+        return self.start is None
     
-    def 
+    def push(self,item):
+        n = Node(item,self.start)
+        self.start = n
+        self.item_count += 1
+        return f"pushed item , {item}"
+    
+    def pop(self):
+        if not self.is_empty():
+            data = self.start.item
+            self.start = self.start.next
+            self.item_count -= 1
+            return f" poped item , {data}"
+        else:
+            raise IndexError("Stack is empty")
+        
+    def peek(self):
+        if not self.is_empty():
+            return self.start.item
+        else:
+            raise IndexError("Stack is empty")
+        
+    def size(self):
+        return self.item_count  
+        
+        
+        
+obj = Stack()
+print(obj.push(30)) 
+print(obj.push(20))  
+print(obj.push(10))  
+print(obj.peek())   
+print(obj.pop())  
+print(obj.peek())   
+print("Size:", obj.size()) 
+              
+            
