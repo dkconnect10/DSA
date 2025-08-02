@@ -17,7 +17,7 @@
 
 # 7. In Stack class, define size() method to return size of the stack 
 #    i.e. number of items present in the stack.
-
+ 
 
 class Node:
     def __init__(self,item=None,next=None):
