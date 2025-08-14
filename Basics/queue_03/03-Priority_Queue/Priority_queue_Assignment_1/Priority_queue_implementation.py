@@ -23,19 +23,39 @@ class Pq:
     def __init__(self):
         self.mylist=[]
         
-    def push(self,value):
-        pass   
-                    
+    def push(self,data,priority):
+        try:
+            index=0
+            while index<len(self.mylist) and self.mylist[index][1]>=priority:
+               index+=1
+               print("save")
+            self.mylist.insert(index,(data,priority))      
+        except Exception as e :
+            print("raise error")
+            return str(e)    
+    
+    def is_empty(self):
+        return len(self.mylist)==0          
         
     def pop(self):
-        self.mylist.pop(0)
+        if not self.is_empty():
+            return self.mylist.pop(0)[0]
+        raise IndexError("Priority Queue is empty")    
         
-    def is_empty(self):
-        return len(self.mylist)==None
+    
     
     def size(self):
         return len(self.mylist) 
     
     
-    
-obj=Pq()           
+obj=Pq()    
+obj.push(5, 7)
+obj.push(8, 1)
+obj.push(9, 10)
+print("Size of PQ",obj.size())
+
+print(obj.pop())  # 9 (priority 10)
+print(obj.pop())  # 5 (priority 7)
+print(obj.pop())  # 8 (priority 1)
+
+print("After Pop PQ size",obj.size())
