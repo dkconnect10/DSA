@@ -20,3 +20,19 @@
 6. In class PriorityQueue, define a method size to return the number of elements
    present in the priority queue.
 '''
+
+
+class Node:
+    def __init__(self,item=None,priority=None,next=None):
+        self.item=item
+        self.priority=priority
+        self.next=next
+        
+        
+class PriorityQueue:
+    def __init__(self,start=None):
+        self.start=start 
+        self.item_count=0 
+        
+    def push(self):
+        pass          
