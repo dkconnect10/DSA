@@ -34,5 +34,24 @@ class PriorityQueue:
         self.start=start 
         self.item_count=0 
         
-    def push(self):
-        pass          
+    def push(self,item,priority):
+        n=Node(item,priority,None)
+        temp=self.start
+        while temp.priority>self.priority:
+            temp.next
+        n.next=temp.next
+        temp=n
+        self.item_count+=1
+    
+    
+    def is_empty(self):
+        return self.item_count==0
+    
+        
+    def size(self):
+        return self.item_count    
+        
+obj=PriorityQueue()
+obj.push(1,5)
+obj.push(8,6)  
+obj.size()                    
