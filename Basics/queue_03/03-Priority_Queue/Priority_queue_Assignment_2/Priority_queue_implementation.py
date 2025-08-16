@@ -30,28 +30,47 @@ class Node:
         
         
 class PriorityQueue:
-    def __init__(self,start=None):
-        self.start=start 
+    def __init__(self):
+        self.start=None 
         self.item_count=0 
+    
+    
         
     def push(self,item,priority):
-        n=Node(item,priority,None)
-        temp=self.start
-        while temp.priority>self.priority:
-            temp.next
-        n.next=temp.next
-        temp=n
+        n=Node(item,priority)
+        if self.start is None or self.start.priority < priority:
+            n.next=self.start
+            self.start=n
+        else:
+            temp=self.start
+            while temp.next is not None and temp.next.priority>=priority:
+                temp=temp.next
+            n.next=temp.next   
+            temp.next=n
         self.item_count+=1
+                    
     
     
     def is_empty(self):
-        return self.item_count==0
+        return self.start is None
     
-        
+    
+    def pop(self):
+        if self.is_empty():
+            raise IndexError("Priority Queue is empty")   
+        data = self.start.item
+        self.start=self.start.next
+        self.item_count-=1
+        return data
+   
     def size(self):
         return self.item_count    
         
-obj=PriorityQueue()
-obj.push(1,5)
-obj.push(8,6)  
-obj.size()                    
+# Test
+obj = PriorityQueue()
+obj.push(1, 5)   # item=1, priority=5
+obj.push(8, 6)   # item=8, priority=6
+print(obj.size())  # 2
+print(obj.pop())   # should pop item=8 (priority=6)
+print(obj.pop())   # should pop item=1 (priority=5)
+print(obj.size())  # 0
