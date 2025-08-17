@@ -1,78 +1,178 @@
-<!-- 1. Introduction to Data Structures -->
+📘 Data Structures & Algorithms (DSA) Roadmap
 
-Introduction to Data Structures
-Why You Should Learn Data Structures?
-Use Case of Data Structure
-Why Product-Based Companies Focus on Data Structures
+This repository contains my step-by-step journey of learning and implementing DSA in Python.
+The topics are divided into Basics, Intermediate, and Advanced levels for better understanding and progression.
 
-<!-- 2. Algorithm Analysis -->
+🟢 Basics (Foundation)
 
-Asymptotic Notations
-Time Complexity
+Arrays & Strings
 
-<!-- 3. Linked List -->
-
-Singly Linked List
-Doubly Linked List
-Circular Linked List
-Circular Doubly Linked List
-
-<!-- 4. Stack and Queue -->
-
-Stack
-Stack Introduction
-Implementation of Stack
-
-Queue
-Queue Introduction
-Implementation of Queue
-Deque – Double Ended Queue
-Priority Queue
-
-<!-- 5. Recursion and Backtracking -->
-
-Recursion Basics
-Approach to Solve Recursive Problems
-Recursion vs Iteration
-Types of Recursion
-
-<!-- 6. Sorting -->
-
-Bubble Sort
-Modified Bubble Sort
-Selection Sort
-Insertion Sort
-Quick Sort
-Merge Sort
-
-<!-- 7. Searching and Hashing -->
+Searching
 
 Linear Search
-Binary Search
+
+Binary Search (basic)
+
+Sorting (Basic)
+
+Bubble Sort
+
+Selection Sort
+
+Insertion Sort
+
+Recursion (Introduction)
+
+Factorial (basic recursion)
+
+Fibonacci (recursive definition)
+
+Sum of digits
+
+Reverse string / array
+
+Linked List
+
+Singly Linked List
+
+Doubly Linked List
+
+Circular Linked List (Singly & Doubly)
+
+Stack
+
+Array Implementation
+
+Linked List Implementation
+
+Queue
+
+Simple Queue
+
+Circular Queue
+
+Deque
+
+Priority Queue
+
+Basic Mathematics
+
+Prime Numbers
+
+GCD / LCM
+
+Factorial
+
+Modular Arithmetic
+
+🟡 Intermediate (Problem Solving Level)
+
 Hashing
 
-<!-- 8. Tree -->
+HashMap / HashSet usage
 
-Binary Tree
-Types of Binary Tree
-Binary Search Tree
-Implementation of Binary Search Tree
+Frequency-based problems
 
-<!-- 9. Heap -->
+Sorting (Advanced)
 
-Heap Introduction
-Implementation of Heap
+Merge Sort
+
+Quick Sort
+
 Heap Sort
 
-<!-- 10. Graph -->
+Binary Search (Intermediate)
 
-Graph Concept
-Graph Representation
-BFS and DFS
+Binary Search on arrays
 
-<!-- 11. Types of Algorithms -->
+Binary Search on answer problems
 
-Divide and Conquer
-Greedy Method
-Dynamic Programming
+Trees
 
+Binary Tree (Traversals → Inorder, Preorder, Postorder, Level Order)
+
+Binary Search Tree (BST)
+
+Heap (Min-Heap, Max-Heap)
+
+Graph Basics
+
+Representation (Adjacency List / Matrix)
+
+BFS & DFS Traversal
+
+Recursion & Backtracking (Applications)
+
+N-Queens
+
+Rat in a Maze
+
+Subset & Permutation problems
+
+Greedy Algorithms
+
+Activity Selection
+
+Huffman Coding Basics
+
+Dynamic Programming (Basic)
+
+Fibonacci / Climbing Stairs
+
+0/1 Knapsack
+
+Coin Change
+
+🔴 Advanced (Interview & Competitive Level)
+
+Advanced Trees
+
+AVL Tree
+
+Red-Black Tree
+
+Segment Tree
+
+Fenwick Tree (Binary Indexed Tree)
+
+Trie (Prefix Tree)
+
+Advanced Graphs
+
+Dijkstra
+
+Bellman-Ford
+
+Floyd-Warshall
+
+Minimum Spanning Tree (Prim’s, Kruskal’s)
+
+Topological Sort
+
+Strongly Connected Components (Kosaraju, Tarjan)
+
+Dynamic Programming (Advanced)
+
+Longest Increasing Subsequence
+
+Matrix DP (LCS, Edit Distance, DP on Grids)
+
+DP on Trees & Graphs
+
+Disjoint Set Union (DSU / Union Find)
+
+Advanced Greedy + Bit Manipulation
+
+Advanced Data Structures
+
+LRU Cache
+
+Skip List
+
+B-Trees (Database related)
+
+📌 Goal:
+
+✔ Build strong DSA foundation
+✔ Practice problem-solving (LeetCode, GFG)
+✔ Prepare for coding interviews & competitive programming
